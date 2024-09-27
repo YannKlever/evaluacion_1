@@ -1,0 +1,14 @@
+.body{
+    padding: 10%;
+    margin: 10%;
+    text-align: center;
+}
+#imagen1 {
+    height: 180px;
+    width: 100%;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}

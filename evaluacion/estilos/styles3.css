@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 0.5fr 2.5fr 1fr 2fr;
+    gap: 10px;
+    text-align: center;
+    background: linear-gradient(black, blue, black);
+}
+header {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding: 5px;
+    gap: 10px;
+    text-align: center;
+    align-content: center;
+
+    transition-property: background-color, width, padding, color;
+    transition-duration: 1s, 2s, 1.5s, 3s;
+    transition-timing-function: ease-in, linear, ease-out, ease;
+    transition-delay: 1s, 1.5s, 2s;
+}
+header:hover{
+    background: linear-gradient(black, red, black);  
+    padding: 15px;
+    color: white;
+    font-size: 90px;
+}
+.seccion1 {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    26% {margin-left: 0%;}
+
+    30% {margin-left: -100%;}
+    56% {margin-left: -100%;}
+
+    60% {margin-left: -200%;}
+    90% {margin-left: -200%;}
+}
+
+.seccion1 ul {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+  }
+
+.seccion1 li {
+    list-style: none;
+    width: 100%;
+}
+.seccion1 img{
+    width: 100%;
+    height: 800px;
+}
+.seccion2 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.sub1,.sub2,.sub3 {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    align-content: center;
+}
+@keyframes izq_a_der {
+    0%{ background-color: black; left: 0px; color: yellow;}
+    50%{ background-color: white; left: 100px; color: black;}  
+    100%{ background-color: blue; left: 200px; color: white;}
+}
+.sub1:hover,.sub2:hover,.sub3:hover{
+    background-color: rgb(18, 180, 159);
+    color: black;
+    font-size: 25px;
+    border-radius: 15px;
+}
+.seccion3 {
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.sub31{
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+}
+.sub31 img{
+    width: 100%;
+    height: 600px;
+}
+.sub4{
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.sub5,.sub6{
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    align-content: center;
+    color: red;
+    font-size: 100px;
+
+    animation-name: izq_a_der;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes izq_a_der {
+    0%{ background-color: black; left: 0px; color: yellow;}
+    50%{ background-color: white; left: 100px; color: black;}  
+    100%{ background-color: blue; left: 200px; color: white;}
+}
+.sub5 img{
+    width: 90%;
+    height: 270px;
+}
